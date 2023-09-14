@@ -1,7 +1,7 @@
 import requests
 from pdf2image import convert_from_path
 
-def pdf_to_png(url, filename)
+def pdf_to_png(url, filename):
     res = requests.request("GET", url).content
     with open("tmp.pdf", "wb") as f:
         f.write(res)
