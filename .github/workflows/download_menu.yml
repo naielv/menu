@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: sudo apt update && sudo apt install -y poppler-utils && pip3 install pdf2image -y && python3 download.py
+        run: sudo apt update && sudo apt install -y poppler-utils && pip3 install pdf2image && python3 download.py
 
       - uses: ncipollo/release-action@v1
         with:
